@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Glass UI</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <div class="card-wrapper">
+      <div class="card">
+        <img src="./img/logo.png" class="card__logo" />
+        <div class="card__chip">
+          <img src="./img/chip.png" alt="" class="card__chip__chip" />
+          <img src="./img/contactless.png" alt="" class="card__chip__icon" />
+        </div>
+        <div class="card__exp">
+          <h4>
+            EXP <br />
+            END
+          </h4>
+          <h4>01/24</h4>
+        </div>
+        <h1 class="card__lcn">
+          <span>1234</span>
+          <span>5678</span>
+          <span>1234</span>
+          <span>5678</span>
+        </h1>
+        <h4 class="card__noc">ALEX SMITH</h4>
+        <img src="./img/mastercard.png" class="card__logo-alt" />
+      </div>
+    </div>
+
+    <script src="./vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.4,
+      });
+    </script>
+  </body>
+</html>
