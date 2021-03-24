@@ -50,11 +50,31 @@
           draggable="false"
         />
       </div>
+      <div class="card card--plus">
+        <img
+          src="./img/logo-premium.png"
+          class="card__logo"
+          draggable="false"
+        />
+        <div class="card__chip">
+          <img
+            src="./img/chip.png"
+            alt=""
+            class="card__chip__chip"
+            draggable="false"
+          />
+        </div>
+        <img
+          src="./img/mastercard.png"
+          class="card__logo-alt"
+          draggable="false"
+        />
+      </div>
     </div>
 
     <script src="./vanilla-tilt.js"></script>
     <script type="text/javascript">
-      VanillaTilt.init(document.querySelector(".card"), {
+      VanillaTilt.init(document.querySelectorAll(".card"), {
         max: 25,
         speed: 400,
         glare: true,

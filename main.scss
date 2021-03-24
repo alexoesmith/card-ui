@@ -52,7 +52,7 @@ body {
   .card {
     width: 440px;
     height: 280px;
-    background-image: linear-gradient(to top, #ed5b5c 0%, #ed5c5d 100%);
+    background-image: linear-gradient(to bottom left, #ed5b5c 0%, #ed5c5d 100%);
     border-radius: 14px;
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.3);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -66,6 +66,16 @@ body {
     flex-shrink: 0;
     overflow: hidden;
     transition: all ease 0.3s;
+    margin: 30px;
+
+    &--plus {
+      background-image: linear-gradient(
+        to bottom left,
+        #3745cb 0%,
+        #0582c3 50%,
+        #075ba3 100%
+      );
+    }
 
     &__logo {
       position: absolute;
