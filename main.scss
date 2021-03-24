@@ -12,7 +12,7 @@
 }
 
 body {
-  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
   position: relative;
   font-family: Credit;
 
@@ -28,7 +28,13 @@ body {
   }
 
   &:after {
-    @extend body::before;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
     clip-path: circle(30% at 10% 10%);
   }
 }
@@ -48,7 +54,7 @@ body {
     height: 280px;
     background-image: linear-gradient(to top, #ed5b5c 0%, #ed5c5d 100%);
     border-radius: 14px;
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.5);
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.3);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-right: 1px solid rgba(255, 255, 255, 0.5);
     z-index: 10;
@@ -60,6 +66,7 @@ body {
     flex-shrink: 0;
     overflow: hidden;
     transition: all ease 0.3s;
+    pointer-events: none;
 
     &__logo {
       position: absolute;

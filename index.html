@@ -7,7 +7,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Glass UI</title>
+    <title>Monzo Card</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./css/main.min.css" />
@@ -15,10 +15,20 @@
   <body>
     <div class="card-wrapper">
       <div class="card">
-        <img src="./img/logo.png" class="card__logo" />
+        <img src="./img/logo.png" class="card__logo" draggable="false" />
         <div class="card__chip">
-          <img src="./img/chip.png" alt="" class="card__chip__chip" />
-          <img src="./img/contactless.png" alt="" class="card__chip__icon" />
+          <img
+            src="./img/chip.png"
+            alt=""
+            class="card__chip__chip"
+            draggable="false"
+          />
+          <img
+            src="./img/contactless.png"
+            alt=""
+            class="card__chip__icon"
+            draggable="false"
+          />
         </div>
         <div class="card__exp">
           <h4>
@@ -34,13 +44,17 @@
           <span>5678</span>
         </h1>
         <h4 class="card__noc">ALEX SMITH</h4>
-        <img src="./img/mastercard.png" class="card__logo-alt" />
+        <img
+          src="./img/mastercard.png"
+          class="card__logo-alt"
+          draggable="false"
+        />
       </div>
     </div>
 
     <script src="./vanilla-tilt.js"></script>
     <script type="text/javascript">
-      VanillaTilt.init(document.querySelectorAll(".card"), {
+      VanillaTilt.init(document.querySelector(".card"), {
         max: 25,
         speed: 400,
         glare: true,
